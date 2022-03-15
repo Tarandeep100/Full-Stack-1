@@ -1,0 +1,33 @@
+<!-- Exercise 4:
+Create a function named helloWorlds using looping and conditionals that has the following requirements:
+● Takes a number as parameter
+● Will check whether the param is a number or not a number
+○ If the param is a number, output “Hello World” x num
+○ Otherwise, if not a number output “Goodbye World”
+-->
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Lab-2</h1>
+    <p>Exercise-4</p>
+    <script>
+        function helloWorlds(param) {
+           if(typeof param == "number") {
+               for(let i = 0; i < param; i++){
+                   console.log("Hello World");
+               }
+           }
+           else
+                console.log("Goodbye World");
+        }
+        helloWorlds(5);
+        helloWorlds(true);
+        helloWorlds(null);
+        helloWorlds(undefined);
+        helloWorlds("hello");
+    </script>
+</body>
+
+</html>

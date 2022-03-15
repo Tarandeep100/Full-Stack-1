@@ -1,0 +1,28 @@
+<!-- Exercise 6:
+Create a function named emptyArray that has the following requirements:
+● Takes a parameter myArray which will always be an array
+● Write a loop that will continue to iterate until the array is empty
+● For each iteration, remove an element from the array
+● Before the function exists it will return the value of myArray
+-->
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Lab-2</h1>
+    <p>Exercise-6</p>
+    <script>
+        function emptyArray(myArray) {
+            console.log("myArray",myArray);
+            while(myArray.length > 0){
+                myArray.pop();
+            }
+            console.log("myArray",myArray);
+        }
+        emptyArray([1,2,3]);
+        emptyArray(["egg","bacon", "toast", "coffee", "random", "juice"]);
+    </script>
+</body>
+
+</html>

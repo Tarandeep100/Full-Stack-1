@@ -1,0 +1,31 @@
+<!-- Challenge 1:
+. Create a function named greaterThanSize that has the following requirements:
+● Takes no parameters
+● Calculates a random local variable named size
+● Does a while loop that does the following
+○ increments a counter by one
+○ output the current size and counter
+○ continues until the counter is greater than the size
+● The output will be different every time, because the size number will be different
+
+
+-->
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Lab-2</h1>
+    <p>Challenge-1</p>
+    <script>
+        function greaterThanSize() {
+            var size = Math.floor(Math.random() * 100) + 1; // 1 to 100
+            for(let i = 0; i < size; i++){
+                console.log("The current size is " + size + " and count is " + (i+1));
+            }
+        }
+        greaterThanSize();
+    </script>
+</body>
+
+</html>

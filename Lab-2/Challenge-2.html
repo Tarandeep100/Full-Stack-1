@@ -1,0 +1,33 @@
+<!-- Challenge 2:
+Create a function named reverseIt that has the following requirements:
+● Takes a parameter myArr which will always be an array
+● Will return an array in reverse order
+
+
+-->
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Lab-2</h1>
+    <p>Challenge-2</p>
+    <script>
+        function reverseIt(myArr) {
+            let i = 0, j = myArr.length - 1, temp = 0;
+            while (i < j){
+                temp = myArr[i];
+                myArr[i] = myArr[j];
+                myArr[j] = temp;
+                i++;
+                j--;
+            }
+            console.log(myArr);
+        }
+        reverseIt([1,2,3,4]);
+        reverseIt([9,9,2,3,4]);
+        reverseIt([]);
+    </script>
+</body>
+
+</html>

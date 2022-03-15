@@ -1,0 +1,29 @@
+<!-- Exercise 5:
+Create a function named buildArray that has the following requirements:
+● Takes a parameter num
+● Create a local variable named myArray
+● Write a loop that will continue to iterate until the counter is greater than num.
+● For each iteration, it add to your counter value to your variable myArray
+● Before the function exists it will return the value of myArray
+-->
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Lab-2</h1>
+    <p>Exercise-5</p>
+    <script>
+        function buildArray(num) {
+            var myArray = new Array();
+            for(let i = 0; i < num; i++){
+                myArray.push(i);
+            }
+            console.log(myArray);
+        }
+        buildArray(2);
+        buildArray(25);
+    </script>
+</body>
+
+</html>

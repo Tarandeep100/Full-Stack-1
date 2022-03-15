@@ -1,0 +1,30 @@
+<!-- Challenge 1:
+Create a script file challenge3.js with the following requirements
+● Create a function named getKeyValuePairs that will take a object as an parameter
+● Returns the keys and values as separate arrays
+● The keys and values may be in the same original order
+
+-->
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Lab-2</h1>
+    <p>Challenge-3</p>
+    <script>
+        function getKeyValuePairs(obj) {
+            var myArray = new Array();
+            myArray.push(Object.keys(obj));
+            // console.log(Object.keys(obj));
+            myArray.push(Object.values(obj));
+            // console.log(Object.entries(obj));
+            console.log(myArray);
+        }
+        getKeyValuePairs({a:5,b:10,c:16});
+        getKeyValuePairs({r:"React",a:"Angular",v:"Vue"});
+        getKeyValuePairs({k1:true, k2:false, k3:undefined});
+    </script>
+</body>
+
+</html>

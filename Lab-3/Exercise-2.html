@@ -1,0 +1,22 @@
+<!-- Exercise 2:
+    Rewrite the following code block using ES6 syntax, ie. const, let, arrow function, template literals and for..of
+-->
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Lab-3</h1>
+    <p>Exercise-2</p>
+    <script>
+        gretter = (myArray, counter) => {
+            let greetText = "Hello ";
+            for(let obj of myArray){
+                console.log(greetText + obj);
+            }
+        }
+        gretter(['Randy Savage', 'Ric Flair', 'Hulk Hogan'], 3);
+    </script>
+</body>
+
+</html>

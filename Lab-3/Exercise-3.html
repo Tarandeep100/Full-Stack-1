@@ -1,0 +1,22 @@
+<!-- Exercise 3:
+    Using array.proto.map create function to use the capitalize method in Exercise 2 to upper case
+    the first character of each Color in the following array
+-->
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Lab-3</h1>
+    <p>Exercise-3</p>
+    <script>
+        capitalizedColors = () => {
+            const colors = ["red", "green", "blue"];
+            const reformatedColors = colors.map( color => (color.charAt(0).toUpperCase() + color.slice(1)));
+            console.log(reformatedColors);
+        }
+        capitalizedColors();
+    </script>
+</body>
+
+</html>

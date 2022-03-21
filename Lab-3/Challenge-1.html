@@ -1,0 +1,28 @@
+<!-- Challenge-1:
+    Using array.proto.reduce create calculate the sum and product of a given array.
+-->
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Lab-3</h1>
+    <p>Challenge-1</p>
+    <script>
+        var array = [1, 2, 3, 4]
+        calculateSum = () => {
+            const sum = array.reduce(
+            (previousValue, currentValue) => previousValue + currentValue, 0);
+            console.log(sum);
+        }
+        calculateProduct = () => {
+            const product = array.reduce(
+            (previousValue, currentValue) => previousValue * currentValue, 1);
+            console.log(product);
+        }
+        calculateSum();
+        calculateProduct();
+    </script>
+</body>
+
+</html>

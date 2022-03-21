@@ -1,0 +1,25 @@
+<!-- Exercise 1:
+● Using ES6 syntax, write a function that will get the difference between a given number and 13, if
+the number is greater than 13 return double the absolute difference
+
+-->
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <h1>Lab-3</h1>
+    <p>Exercise-1</p>
+    <script>
+        const num2 = 13;
+        difference = (num1) => {
+            var diff = num1 - num2;
+            diff = diff < 0 ? diff*-1 : diff;
+            return (diff) > 13 ? diff*2 :  diff;
+        }
+        console.log(difference(32));
+        console.log(difference(11));
+    </script>
+</body>
+
+</html>

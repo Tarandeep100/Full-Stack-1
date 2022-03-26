@@ -20,7 +20,7 @@
     
       });
   
-      const connect = () => { console.log("connect()"); socket.emit('Connect'); }  
+      const connect = () => { socket.emit('Connect'); }  
       const disconnect = () => { socket.emit('Disconnect'); }
       const send = () => { socket.emit('Send Message'); }
 

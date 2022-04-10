@@ -1,6 +1,8 @@
 var express = require('express');
 const res = require('express/lib/response');
 var app = express();
+app.use(express.json());
+app.use(cookieParser());
 
 var requestTime = function(req,res,next){
     req.requestTime = Date.now();
